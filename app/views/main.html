@@ -1,0 +1,120 @@
+<!-- <div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+</div>
+ -->
+
+<div class="table-responsive">
+  <!-- <ul>
+    <li ng-repeat="book in books">{{book.id}}-{{book.title}}</li>
+  </ul> -->
+  <table class="table table-bordered table-hover" >
+    <tr>
+      <td>id</td>
+      <td>title</td>
+      <td>type</td>
+      <td>author</td>
+      <td>publisher</td>
+      <td>cover type</td>
+      <td>format</td>
+      <td>number of page</td>
+      <td>price</td>
+      <td>description</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr ng-repeat="book in books">
+      <td>{{book.id}}</td>
+      <td>{{book.title}}</td>
+      <td>{{book.type}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.publisher}}</td>
+      <td>{{book.coverType}}</td>
+      <td>{{book.format}}</td>
+      <td>{{book.numberOfPage}}</td>
+      <td>{{book.price}}</td>
+      <td>{{book.description}}</td>
+      <td><button ng-click="deleteBook(book.id)">delete</button></td>
+      <td><button ng-click="editBook(book)">edit</button></td>
+    </tr>
+  </table>
+  <table>
+    <td>
+      <td><input type="hidden" ng-model="newBook.id" /></td>
+    </td>
+    <tr>
+      <td>Book title</td>
+      <td><input type="text" ng-model="newBook.title" /></td>
+    </tr>
+    <tr>
+      <td>Book type</td>
+      <td><input type="text" ng-model="newBook.type" /></td>
+    </tr>
+    <tr>
+      <td>Book author</td>
+      <td><input type="text" ng-model="newBook.author" /></td>
+    </tr>
+    <tr>
+      <td>Book publisher</td>
+      <td><input type="text" ng-model="newBook.publisher" /></td>
+    </tr>
+    <tr>
+      <td>Book cover type</td>
+      <td><input type="text" ng-model="newBook.coverType" /></td>
+    </tr>
+    <tr>
+      <td>Book format</td>
+      <td><input type="text" ng-model="newBook.format" /></td>
+    </tr>
+    <tr>
+      <td>Book page</td>
+      <td><input type="number" ng-model="newBook.numberOfPage" /></td>
+    </tr>
+    <tr>
+      <td>Book price</td>
+      <td><input type="number" ng-model="newBook.price" /></td>
+    </tr>
+    <tr>
+      <td>Book description</td>
+      <td><textarea ng-model="newBook.description" ></textarea></td>
+    </tr>
+    <button ng-click="addBook()">Add book</button>
+    <button ng-click="saveBook()">Save</button>
+  </table>
+  <img ng-src="{{imagePath}}" />
+
+<!--   <form ng-submit="uploadImage()" name="uploadForm" enctype="multipart/form-data" >
+    <input name="file" type="file" id="file" file-model="myFile" />
+    <input name="somethingINeed" type="submit" value="Upload" />
+</form>  -->
+<!-- 
+    <form action="http://localhost:8080/api/image" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload"> 
+  </form> -->
+
+<form ng-submit="uploadImage()">
+    <input type="file" name="file" file-model="file" >
+    <input type="submit" value="Upload"> 
+  </form>
+
+</div>

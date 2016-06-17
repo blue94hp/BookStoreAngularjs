@@ -1,0 +1,64 @@
+
+    <section class="content">
+    	<div class="content_path">
+    		<ol class="breadcrumb">
+    			<li>
+    				<a href="#">Home</a>
+    			</li>
+    			<li>
+    				<a href="#">Link</a>
+    			</li>
+    			<li class="active">Current</li>
+    		</ol>
+    	</div>
+    	<div class="container" >
+    		<div class="row" >
+    			<div class="col-sm-8 detail_product">
+    				<div class="row">
+    					<div class="col-sm-6">
+    						<a href="">
+    							<img ng-src="http://localhost:8080/api/image/{{imageUrl}}/">
+    						</a>
+    					</div>
+    					<div class="col-sm-6">
+                            <div class="all_total">
+                                <button ng-click="addToCart(id)" class="btn btn-danger btn-lg btn-block">Add to Cart</button>
+                            </div>
+    						<h4>{{title}} </h4>
+    						<h5>Tác giả: {{author}} </h5>
+    						<h5>Chuyên mục: {{type}}</h5>
+    						<h5>Nhà xuất bản: {{publisher}}</h5>
+                <h5>Định dạng: {{coverType}}</h5>
+                <h5>Kích thước: {{format}}</h5>
+                <h5>Số trang: {{numberOfPage}}</h5>
+    						<h5>Giá bán: {{price}} </h5>
+    					</div>
+    				</div>
+    				<div class="describe">
+    					<p>Giới thiệu</p>
+              <p>{{description}}</p>
+    				</div>
+    			</div>
+    			<div class="col-sm-4 new_product">
+    				<h3>New product</h3>
+    				<ul>
+    					<li>
+    						<a href="#">
+    							<img src="img/new/new1.jpg"> 
+    						</a>
+    					</li>
+    					<li>
+    						<a href="#">
+    							<img src="img/new/new2.jpg"> 
+    						</a>
+    					</li>
+    					<li>
+    						<a href="#">
+    							<img src="img/new/new3.jpg"> 
+    						</a>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </section>

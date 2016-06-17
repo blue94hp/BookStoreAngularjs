@@ -1,0 +1,264 @@
+/* 1.Home page*/
+/*top-bar*/
+.top-bar{
+	padding: 10px 0px;
+	background: #24a282;
+	height: 55px;
+}
+
+.top-bar .lang ul.dropdown-menu{
+	margin-top: 0px;
+}
+
+.top-links a{
+	color: #fff;
+}
+.top-links li{
+	font-size: 16px;
+	font-family: Helvatical;
+	font-weight: bold;
+	float: left;
+	margin-top: 5px;
+	padding: 0px 10px;
+	border-right: 1px solid #e1e1e1;
+}
+
+/*main-header*/
+.main-header{
+	padding: 30px 0px;
+}
+
+.main-header .search input[type=text]{
+	width: 205px;
+}
+.main-header .search button{
+	margin-right: -38px;
+}
+
+.text-center{
+	font-family: 'Lobster', cursive;
+	color: #f9c90f;
+	text-shadow: 3px 3px 0 #ad2960,
+	5px 5px 0 rgba(255, 255, 255, 0.4);
+}
+
+.cart-w, .wishlist-w{
+	float: left;
+}
+.cart-w{
+	padding: 0px 20px;
+}
+.cart-wish-w span strong{
+	color: #F2532F;
+}
+.cart-wish-w span{
+	border: 1px solid #d1d1d1;
+	padding: 5px 10px;
+	display: block;
+	float: left;
+}
+.cart-wish-w a{
+	display: block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+	background: #F2532F;
+}
+
+/*main-nav*/
+.main-nav{
+	background: #24a282;
+}
+.main-nav li a{
+	color: #fff;
+	font-weight: bold;
+}
+.main-nav li a:hover{
+	color: #000;
+}
+
+/*slider*/
+.slider{
+	padding: 0px 110px 0px 110px;
+	text-align: center;
+}
+.container h3{
+	color: #24a282;
+}
+
+/*content*/
+.content .total .total1{
+	border: 1px solid grey;
+	border-radius: 3%;
+	padding: 10px 10px 10px 10px;
+}
+/*promo*/
+.promo h3{
+	margin-top: 40px;
+	color: #24a282;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 2px solid #e1e1e1;
+	padding-bottom: 20px;
+}
+.promo {
+	margin-bottom: 30px;
+}
+
+/*product-new*/
+.product-new{
+	margin-bottom: 30px;
+}
+/*product-lists*/
+.product-lists{
+	margin-bottom: 30px;
+}
+.box-tilte{
+	margin-top: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 2px solid #e1e1e1;
+	padding-bottom: 20px;
+}
+
+.product-item{
+	position: relative;
+	margin-bottom: 30px;
+}
+.product-item .image img{
+	border-bottom: 1px solid #e1e1e1;
+	padding-bottom: 30px;
+}
+.product-item .image .line{
+	width: 20px;
+	height: 1px;
+	background: #F2532F;
+}
+.product-item:hover .image .line{
+	transition:width 2s;
+	width: 95%;
+}
+.product-item .image .wishlist .left{
+	position: absolute;
+	bottom: 140px;
+	left: 20px;
+	display: none;
+}
+.product-item .image .wishlist .right{
+	position: absolute;
+	bottom: 140px;
+	right: 50px;
+	display: none;
+}
+.product-item:hover .image .wishlist .left{
+	display: block;
+}
+.product-item:hover .image .wishlist .right{
+	display: block;
+}
+
+.product-item .image .wishlist a{
+	display: block;
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	text-align: center;
+	border-radius: 10%;
+	color: #fff;
+	background: #F2532F;
+}
+.product-item .title a{
+	color: #928F8F;
+}
+.product-item .title a:hover{
+	color: #000;
+}
+
+.product-item .info del{
+	font-size: 16px;
+	font-weight: bold;
+}
+.product-item .info ins{
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 20px;
+	color: #F2532F;
+}
+
+/*Look more*/
+.look-more{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.look-more button{
+	background: #24a282;
+	color: #fff;
+	padding: 10px 15px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
+/*About us*/
+.footer{
+	background: #333333;
+	color: #fff;
+	margin-top: 20px;
+}
+.footer .footer-copyright p{
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*Login*/
+.login{
+	text-align: center;
+	margin-top: 120px;
+	margin-left: 300px;
+	height: 400px;
+	width: 500px;
+	background: #24a282;
+	border-radius: 4px;
+}
+.login img{
+	border-radius: 50%;
+	margin-top: -120px;
+	margin-bottom: 30px;
+}
+.login input{
+	font-size: 16px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+/*Creat an account*/
+body{
+	margin: 0 auto;
+}
+
+.conta-creat{
+	margin-top: 80px;
+	margin-left: 300px;
+	height: 400px;
+	width: 500px;
+	background: #24a282;
+	border-radius: 4px;
+}
+.style2{
+	padding-top: 40px; 
+}
+input[type="text"], input[type="password"], input[type="email"]{
+	height: 35px;
+	font-size: 15px;
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+.style2 a{
+	margin-left: 20px;
+	color: #fff;
+}

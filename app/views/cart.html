@@ -1,0 +1,58 @@
+
+    <section class="content">
+      <div class="content_path">
+        <ol class="breadcrumb">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li class="active">Current</li>
+        </ol>
+      </div>
+      <div class="container">
+        <h3>Information of your cart </h3>
+        <div class="row">
+          <div class="col-sm-8 detail_cart">
+          <hr/>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Tên sách</th>
+                  <th>Số lượng</th>
+                  <th>Giá</th>
+                  <th>Tổng tiền</th>
+                </tr>
+              </thead>
+              <tbody> 
+                <tr ng-repeat="book in books">
+                  <td>1</td>
+                  <td ng-value="title">{{book.title}}</td>
+                  <td><input type="number" ng-model="quantity" /></td>
+                  <td ng-value="price">{{book.price}}</td>
+                  <td >{{amount}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr/>
+          </div>
+          <hr/>
+          <div class="col-sm-4 total">
+            <div class="total1">
+              <h5>Total: </h5>
+              <h5>VAT Tax: </h5>
+              <hr/>
+              <h5>Total pay: </h5>
+            </div>
+            <br/>
+            <div class="all_total">
+              <button ng-click="purchase()" class="btn btn-danger btn-lg btn-block">Pay now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- end .content-->
+
+ 
